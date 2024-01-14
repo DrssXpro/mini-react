@@ -34,6 +34,8 @@ function workLoop(deadline) {
     // 判断是否还有空闲时间
     shouldYield = deadline.timeRemaining() < 1;
   }
+  // 在下一轮空闲时间进行处理
+  requestIdleCallback(workLoop);
 }
 
 function createDom(type) {
