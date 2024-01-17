@@ -51,3 +51,16 @@
 - task6: createElement 区分出传值处理，先考虑 number 类型传值 ✅
 
 - task7: 考虑平行函数组件, 函数组件之间的 fiber 建立联系，其子 fiber 节点需要通过 parent 向上查找到 sibling 函数组件 fiber ✅
+
+
+## Day5
+
+目标：实现属性更新
+
+- task1: 针对于属性更新增加事件属性处理，针对于事件属性添加对应的 DOM 事件 ✅
+
+- task2: 实现 update 方法，增加 currentRoot 来保存上一次的整个 fiber 结构，针对于 fiber 结构增加 alternate 属性表示旧 fiber 的引用 ✅
+
+- task3: 重构 initChildren 方法，额外补充更新操作，fiber 结构增加 effectTag 标记该节点状态（update or placement），并建立 alternate 关系 ✅
+
+- task4: 重构 updateProps 方法，考虑新旧属性的更新、删除、添加 ✅
